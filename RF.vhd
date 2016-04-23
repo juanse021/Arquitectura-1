@@ -27,6 +27,7 @@ begin
 	process(reset,rs1,rs2,rd,datawrite)
 	begin
 	
+			registro(0) <= x"00000000";
 			if(reset = '1')then
 				CRs1 <= (others=>'0');
 				CRs2 <= (others=>'0');
